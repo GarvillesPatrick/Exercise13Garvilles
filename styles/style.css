@@ -1,0 +1,175 @@
+*{
+    text-decoration: none;
+}
+
+header{
+    min-height: 150px;
+    max-height: 150px;
+    display: flex;
+    background: url(../images/pinetrees.jpg);
+    background-position: center;
+    padding: 5px;
+}
+
+header > img{
+    max-width: 11%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    background: rgb(255,253,142);
+    background: linear-gradient(90deg, rgba(255,253,142,1) 0%, rgba(105,215,143,1) 73%);
+}
+
+h1{
+    
+    font-weight: bolder;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 30;
+    padding-left: 20px;
+    display: inline;
+}
+
+h3{
+    text-align: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    
+}
+
+p{
+    padding: 20px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+
+.navbar{
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.navbar a{
+    color: black;
+    display: block;
+}
+
+.navbar div{
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.navbar div:hover{
+    color: white;
+    background: #bbb;  
+}
+
+.navbar div:active{
+    background: #aaa;
+}
+
+.navbar a:hover{
+    color:white;
+}
+
+
+.schooldesc{
+    border-radius: 20px;
+    display: flex;
+    background-color: #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.schooldesc img{
+    object-fit: cover;
+}
+
+.content{
+    padding: 10px;
+}
+
+.schooldesc img{
+    max-width: 15%;
+}
+
+
+.newsetc{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+
+    grid-template-areas: 
+    "news links calendar"
+    "news photos photos";
+
+    gap: 10px;
+}
+
+
+.news{
+    grid-area: news;
+    background-color: #aaa;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.news p {
+    display: inline;
+}
+
+.links{
+    grid-area: links;   
+    background: #ccc;
+    border-radius: 20px;
+}
+
+.links ul{
+    text-align: center;
+}
+
+.contacts{
+    grid-area: calendar;
+    background-color: #aaa;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+
+}
+
+
+.photos{
+    grid-area: photos;
+    padding: 10px;
+    margin: 0px;
+    background: #ddd;
+    display: block;
+    border-radius: 20px;
+}
+
+.photos img{
+    height: 130px;
+    width: auto;
+}
